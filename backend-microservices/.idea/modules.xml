@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/api-gateway/apigateway.iml" filepath="$PROJECT_DIR$/api-gateway/apigateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/application-service/application-service.iml" filepath="$PROJECT_DIR$/application-service/application-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/article-service/article-service.iml" filepath="$PROJECT_DIR$/article-service/article-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/availability-service/availability-service.iml" filepath="$PROJECT_DIR$/availability-service/availability-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/booking-service/booking-service.iml" filepath="$PROJECT_DIR$/booking-service/booking-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/candidat-service/candidat-service.iml" filepath="$PROJECT_DIR$/candidat-service/candidat-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/company-service/company-service.iml" filepath="$PROJECT_DIR$/company-service/company-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/configserver/configserver.iml" filepath="$PROJECT_DIR$/configserver/configserver.iml" />
+      <module fileurl="file://$PROJECT_DIR$/discoveryserver/discoveryserver.iml" filepath="$PROJECT_DIR$/discoveryserver/discoveryserver.iml" />
+      <module fileurl="file://$PROJECT_DIR$/event-service/event-service.iml" filepath="$PROJECT_DIR$/event-service/event-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/exchange-service/exchange-service.iml" filepath="$PROJECT_DIR$/exchange-service/exchange-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/identity-service/identity-service.iml" filepath="$PROJECT_DIR$/identity-service/identity-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/microservices.iml" filepath="$PROJECT_DIR$/.idea/microservices.iml" />
+      <module fileurl="file://$PROJECT_DIR$/paiement/paiment-service.iml" filepath="$PROJECT_DIR$/paiement/paiment-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/room-service/room-service.iml" filepath="$PROJECT_DIR$/room-service/room-service.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,17 @@
+<app-dashboard class="reduced-dashboard"></app-dashboard>
+<app-sidebar class="sidebar"></app-sidebar>
+<div class="company-details-container">
+  <h2>Organization Details</h2>
+  <div class="company-logo">
+    <app-image-download></app-image-download>
+  </div>
+  <div *ngIf="companyDetails">
+    <p><strong>Organization Name:</strong> {{ companyDetails.companyName }}</p>
+    <p><strong>Email:</strong> {{ companyDetails.email }}</p>
+    <p><strong>Total Places:</strong> {{ companyDetails.employeeNumber }}</p>
+    <p><strong>Description:</strong> {{ companyDetails.fullName }}</p>
+    <p><strong>Phone:</strong> {{ companyDetails.phone }}</p>
+    <button (click)="redirectToCreateJob()">Add an Post</button>
+
+  </div>
+</div>

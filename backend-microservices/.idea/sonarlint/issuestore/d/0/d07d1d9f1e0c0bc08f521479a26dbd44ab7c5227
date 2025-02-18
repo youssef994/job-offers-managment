@@ -1,0 +1,28 @@
+
+k	java:S117*"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ŠÀşÿÿÿÿ
+f	java:S117/"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ğ–æí
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ƒé—ø
+k
+java:S36555"PCall "Optional#isPresent()" or "!Optional#isEmpty()" before accessing the value.(ÖèÍ¥øÿÿÿÿ
+k
+java:S36557"PCall "Optional#isPresent()" or "!Optional#isEmpty()" before accessing the value.(ª¶®ñÿÿÿÿÿ
+k
+java:S3655z"PCall "Optional#isPresent()" or "!Optional#isEmpty()" before accessing the value.(¼Ü²¯ÿÿÿÿÿ
+l
+java:S3655”"PCall "Optional#isPresent()" or "!Optional#isEmpty()" before accessing the value.(‡ŒÀúÿÿÿÿ
+k
+java:S3655*"PCall "Optional#isPresent()" or "!Optional#isEmpty()" before accessing the value.(ŠÀşÿÿÿÿ
+k
+java:S3655C"PCall "Optional#isPresent()" or "!Optional#isEmpty()" before accessing the value.(¼Ü²¯ÿÿÿÿÿ
+f
+java:S3655Œ"PCall "Optional#isPresent()" or "!Optional#isEmpty()" before accessing the value.(šÅ¸/
+k
+java:S3655R"PCall "Optional#isPresent()" or "!Optional#isEmpty()" before accessing the value.(¼Ü²¯ÿÿÿÿÿ
+k
+java:S3655`"PCall "Optional#isPresent()" or "!Optional#isEmpty()" before accessing the value.(¼Ü²¯ÿÿÿÿÿ
+k
+java:S3655o"PCall "Optional#isPresent()" or "!Optional#isEmpty()" before accessing the value.(¼Ü²¯ÿÿÿÿÿ
+k
+java:S3655("PCall "Optional#isPresent()" or "!Optional#isEmpty()" before accessing the value.(»ÀÈÏøÿÿÿÿ
+]
+java:S1128"BRemove this unused import 'com.netflix.discovery.converters.Auto'.(İ¼’²ùÿÿÿÿ

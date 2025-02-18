@@ -1,0 +1,55 @@
+<app-dashboard></app-dashboard>
+
+<div class="exchange-program-form">
+  <h2>Exchange Program</h2>
+  <form (submit)="saveOrUpdateProgram()">
+    <div class="form-group">
+      <label for="name">Name:</label>
+      <input id="name" [(ngModel)]="program.name" placeholder="Name" />
+    </div>
+    <div class="form-group">
+      <label for="description">Description:</label>
+      <textarea id="description" [(ngModel)]="program.description" placeholder="Description"></textarea>
+    </div>
+    <div class="form-group">
+      <label for="type">Type:</label>
+      <select id="type" [(ngModel)]="program.type">
+        <option *ngFor="let type of types" [value]="type">{{type}}</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="location">Location:</label>
+      <input id="location" [(ngModel)]="program.location" placeholder="Location" />
+    </div>
+
+    <div class="form-group">
+      <label for="startDate">Start Date:</label>
+      <input id="startDate" type="date" [(ngModel)]="program.startDate" />
+    </div>
+    <div class="form-group">
+      <label for="endDate">End Date:</label>
+      <input id="endDate" type="date" [(ngModel)]="program.endDate" />
+    </div>
+
+    <div class="form-group">
+      <label for="capacity">Capacity:</label>
+      <input id="capacity" type="number" [(ngModel)]="program.capacity" placeholder="Enter total capacity" />
+    </div>
+    <div class="form-group">
+      <label for="participantsNbr">Number of Participants:</label>
+      <input id="participantsNbr" type="number" [(ngModel)]="program.participantsNbr" placeholder="Enter number of participants" />
+    </div>
+
+    <div class="form-group">
+      <label for="status">Status:</label>
+      <select id="status" [(ngModel)]="program.status">
+        <option *ngFor="let status of statuses" [value]="status">{{status}}</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="details">Details:</label>
+      <textarea id="details" [(ngModel)]="program.details" placeholder="Provide additional details..."></textarea>
+    </div>
+    <button type="submit">Save</button>
+  </form>
+</div>

@@ -1,0 +1,46 @@
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td, th {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+tr:hover {
+  background-color: #f5f5f5;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+
+.card-img-top {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.card-container {
+  padding: 20px;
+}
+.card, .room-card {
+  margin-bottom: 20px;
+  border: 152px solid #ddd;
+  border-radius: 555px;
+  box-shadow: 100px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.room-card {
+  width: calc(25% - 20px);
+  margin: 10px;
+}

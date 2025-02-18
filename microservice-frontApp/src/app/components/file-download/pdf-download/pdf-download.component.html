@@ -1,0 +1,7 @@
+<div>
+  <h2>Download PDF</h2>
+  <button (click)="downloadPDF()">Download PDF</button>
+  <div *ngIf="pdfBlob">
+    <a [href]="pdfBlob" download="downloaded.pdf"><button>Download PDF</button></a>
+  </div>
+</div>

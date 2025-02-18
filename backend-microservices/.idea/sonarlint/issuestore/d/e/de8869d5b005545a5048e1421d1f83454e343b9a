@@ -1,0 +1,6 @@
+
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(òµ›²
+_
+java:S2259<"CA "NullPointerException" could be thrown; "roles" is nullable here.(²™ß8·‚¤è1
+E	java:S1061"+Replace this use of System.out by a logger.(²ï†¢øÿÿÿÿ
+E	java:S1063"+Replace this use of System.out by a logger.(ûì¼áüÿÿÿÿ

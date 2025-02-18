@@ -1,0 +1,22 @@
+
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ª€½Ãùÿÿÿÿ
+D
+java:S1068"/Remove this unused "companyName" private field.(Õîæ+
+?
+java:S1068")Remove this unused "poste" private field.(®Ô³é
+G
+java:S1068",Remove this unused "position" private field.(©ùéäıÿÿÿÿ
+C
+java:S1068"-Remove this unused "startDate" private field.(­Ãé„
+F
+java:S1068"+Remove this unused "endDate" private field.(³ÁÎüşÿÿÿÿ
+J
+java:S1068"/Remove this unused "description" private field.(ÇÓæâıÿÿÿÿ
+E
+java:S1068#"*Remove this unused "school" private field.(¨Ô¥äúÿÿÿÿ
+C
+java:S1068$"-Remove this unused "startDate" private field.(­Ãé„
+F
+java:S1068%"+Remove this unused "endDate" private field.(³ÁÎüşÿÿÿÿ
+@
+java:S1068&"*Remove this unused "degree" private field.(úñ¼

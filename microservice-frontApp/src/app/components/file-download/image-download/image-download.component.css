@@ -1,0 +1,41 @@
+/* Base style for both downloaded and placeholder images */
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 50%; /* Gives a rounded look to the images */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  transition: transform 0.3s ease; /* For hover effect */
+}
+
+img:hover {
+  transform: scale(1.05); /* Slight zoom on hover */
+}
+
+.placeholder {
+  text-align: center;
+  background-color: #eee; /* A softer background color */
+  padding: 20px;
+  border-radius: 50%; /* Consistency in design */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05); /* Lighter shadow for the placeholder */
+}
+
+.placeholder img {
+  max-height: 100px;
+}
+
+.download-button {
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 15px; /* A little space above the button */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for the button */
+  transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.download-button:hover {
+  background-color: #0056b3;
+}

@@ -1,0 +1,76 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  background-size: cover;
+  background-position: center top;
+  overflow-x: hidden;
+}
+
+.container {
+  position: relative;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 800px;
+  margin: 40px auto;
+  backdrop-filter: blur(10px); /* Add a blur to the background */
+  background-color: rgba(256, 256, 256, 0.6); /* Semi-transparent white overlay */
+}
+
+.cool-form {
+  display: flex;
+  flex-direction: column;
+}
+
+fieldset {
+  border: 1px solid #e3e3e3;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+}
+
+legend {
+  font-weight: bold;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+label {
+  margin-bottom: 5px;
+}
+
+input, select, textarea {
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+}
+
+button[type=submit] {
+  background-color: #5e72e4;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+button[type=submit]:hover {
+  background-color: #324cdd;
+}
+
+.add-button, .remove-btn {
+  margin-top: 10px;
+  background-color: #f5365c;
+  color: white;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.add-button:hover, .remove-btn:hover {
+  background-color: #d31a40;
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bookings List</title>
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+  <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+</head>
+<body>
+
+<div fxLayout="column" fxLayoutGap="20px">
+  <!-- Input group for search -->
+  <div class="input-group">
+    <input type="text" class="form-control" placeholder="Search" [(ngModel)]="searchTerm" (input)="filterBookings()">
+  </div>
+
+  <!-- Dropdown for search by -->
+  <div class="dropdown">
+    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+      Search by
+      <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+      <li><a href="#" (click)="searchOption='id'; filterBookings()">Booking Id</a></li>
+      <li><a href="#" (click)="searchOption='roomId'; filterBookings()">Room Id</a></li>
+      <li><a href="#" (click)="searchOption='userEmail'; filterBookings()">User Email</a></li>
+    </ul>
+  </div>
+
+  <div class="table-responsive">
+    <table class="table">
+      <thead>
+      <tr>
+        <th>Booking Id</th>
+        <th>Room Id</th>
+        <th>Start Date</th>
+        <th>End Date</th>
+        <th>User Email</th>
+        <th>Number</th>
+        <th>Paid</th>
+        <th>Auto Renewed</th>
+        <th>Delete</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let booking of filteredBookings">
+        <td>{{ booking.bookingId }}</td>
+        <td>{{ booking.roomId }}</td>
+        <td>{{ booking.startDate }}</td>
+        <td>{{ booking.endDate }}</td>
+        <td>{{ booking.userEmail }}</td>
+        <td>{{ booking.totalPrice }}</td>
+        <td>{{ booking.paid }}</td>
+        <td>{{ booking.autoRenewed }}</td>
+        <td>
+          <div class="delete-container">
+            <button class="btn btn-danger" (click)="deleteBooking(booking.bookingId)" [disabled]="deletingBooking">
+              <span *ngIf="!deletingBooking">Delete</span>
+            </button>
+          </div>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+</body>
+</html>

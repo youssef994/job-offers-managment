@@ -1,0 +1,35 @@
+<div class="top-section">
+  <app-dashboard class="reduced-dashboard"></app-dashboard>
+  <app-sidebar class="sidebar"></app-sidebar>
+</div>
+<div class="job-list-container">
+  <h2 class="section-title">My Posts</h2>
+  <div class="job-cards">
+    <div *ngFor="let job of jobs" class="job-card">
+      <div class="job-header">
+        <h3>{{ job.jobTitle }}</h3>
+        <p class="job-type">{{ job.jobType }}</p>
+      </div>
+      <div class="job-details">
+        <p>Location: {{ job.location }}</p>
+        <p>Available Places: {{ job.peopleNumber }}</p>
+        <p>Duration: {{ job.nbrHours }}</p>
+        <p>Start Date: {{ job.startDate | date: 'medium' }}</p>
+        <p>salary: ${{ job.salary }}</p>
+        <p>Description: {{ job.description }}</p>
+      </div>
+      <div class="company-details">
+        <p><strong>company Details:</strong> {{ job.companyDetails.companyName }}</p>
+        <p><strong> Email:</strong> {{ job.companyDetails.email }}</p>
+<!--        <p><strong>Employee Number:</strong> {{ job.companyDetails.employeeNumber }}</p>-->
+      </div>
+      <button (click)="deleteJob(job.jobId)">Delete </button>
+      <button (click)="viewApplicationsForJob(job.jobId)">View Applications</button>
+
+    </div>
+  </div>
+  <div *ngIf="!jobs || jobs.length === 0" class="no-jobs-found">
+    <p>No jobs found for this company.</p>
+  </div>
+
+</div>

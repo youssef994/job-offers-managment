@@ -1,0 +1,8 @@
+
+b	java:S112"FDefine and throw a dedicated exception instead of using a generic one.(Şï”Å8ıÄˆùç1
+a	java:S112+"FDefine and throw a dedicated exception instead of using a generic one.(•Òøe8ÿÄˆùç1
+X	java:S125"<This block of commented-out lines of code should be removed.(Ûªë¬8Ü²´Ğê1
+]	java:S125&"<This block of commented-out lines of code should be removed.(º®Å’üÿÿÿÿ8ç²´Ğê1
+L	java:S106*"+Replace this use of System.out by a logger.(¾Şºÿÿÿÿÿ8îÅˆùç1
+d
+java:S20942"BRemove this empty class, write its code or make it an "interface".(¦Á¦¼ıÿÿÿÿ8õÅˆùç1

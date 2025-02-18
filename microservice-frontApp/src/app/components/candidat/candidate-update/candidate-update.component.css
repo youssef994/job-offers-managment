@@ -1,0 +1,119 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 50px auto;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.update-form {
+  margin: 0;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 30px;
+  text-align: center;
+  color: #444;
+}
+
+fieldset {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+legend {
+  background-color: #fff;
+  padding: 5px 10px;
+  font-weight: bold;
+  color: #333;
+}
+
+.input-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 8px;
+  color: #666;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+button {
+  background-color: #0073e6;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.2s;
+}
+
+button:hover {
+  background-color: #005bb5;
+}
+
+button.remove-btn {
+  background-color: #f7aa01;
+  margin-top: 10px;
+  display: block;
+}
+
+button.remove-btn:hover {
+  background-color: #f09801;
+}
+
+.add-button {
+  margin-top: 10px;
+  display: block;
+}
+
+.submit-btn {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.skill-input {
+  display: flex;
+  justify-content: space-between;
+}
+
+.input-row {
+  width: 48%;
+}
+
+.skills, .languages, .education, .experience {
+  position: relative;
+}
+
+.remove-btn {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 12px;
+  background-color: #ccc;
+  color: #333;
+}
+

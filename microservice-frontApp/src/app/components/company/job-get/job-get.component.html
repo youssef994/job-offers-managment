@@ -1,0 +1,73 @@
+<div class="top-section">
+  <app-dashboard class="reduced-dashboard"></app-dashboard>
+  <app-sidebar class="sidebar"></app-sidebar>
+</div>
+<div class="job-list-container">
+  <h2 class="section-title">Job list</h2>
+
+  <div class="filter-container">
+    <input type="text" [(ngModel)]="filter" placeholder="Search programs">
+    <select [(ngModel)]="jobTypeFilter">
+      <option value="">All program Types</option>
+      <option value="FULL_TIME">FULL_TIME</option>
+      <option value="PART_TIME">PART_TIME</option>
+      <option value="TEMPORARY">TEMPORARY</option>
+      <option value="INTERNSHIP">INTERNSHIP</option>
+      <option value="PERMANENT">PERMANENT</option>
+    </select>
+  </div>
+
+  <div class="job-cards">
+    <div *ngFor="let job of jobDetails | filterJobs: filter:jobTypeFilter" class="job-card">
+      <div class="job-header">
+        <h3>{{ job.jobTitle }}</h3>
+<!--        <p class="job-type">{{ job.jobType }}</p>-->
+      </div>
+      <div class="job-details">
+        <p>Location: {{ job.location }}</p>
+        <p>Number of People: {{ job.peopleNumber }}</p>
+        <p>Duration: {{ job.nbrHours }}</p>
+        <p>Start Date: {{ job.startDate | date: 'medium' }}</p>
+        <p>Price: ${{ job.salary }}</p>
+        <p>Description: {{ job.description }}</p>
+        <button (click)="openApplyModal(job)">Apply</button>
+
+      </div>
+      <div class="company-details">
+        <p><strong>Posted By:</strong> {{ job.companyDetails.companyName }}</p>
+        <p><strong>Contact Email:</strong> {{ job.companyDetails.email }}</p>
+        <p><strong>Number:</strong> {{ job.companyDetails.phoneNumber }}</p>
+      </div>
+    </div>
+  </div>
+  <div *ngIf="jobDetails.length === 0" class="no-jobs-found">
+    <p>No program  found.</p>
+  </div>
+<!--  <div class="modal" [class.show]="isModalOpen">-->
+<!--    <div class="modal-content">-->
+<!--      <span class="close" (click)="closeApplyModal()">&times;</span>-->
+<!--      <h2>Apply for Job</h2>-->
+<!--      <input type="file" (change)="onFileSelected($event)">-->
+<!--      <button (click)="applyForJobWithUpload()">Submit Application</button>-->
+<!--    </div>-->
+<!--  </div>-->
+  <div class="modal" [class.show]="isModalOpen">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2>Apply</h2>
+          <span class="close" (click)="closeApplyModal()">&times;</span>
+        </div>
+        <div class="modal-body">
+          <div class="file-upload">
+            <label for="resume">Upload the Files:</label>
+            <input type="file" id="resume" (change)="onFileSelected($event)">
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button class="btn-apply" (click)="applyForJobWithUpload()">Submit Application</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

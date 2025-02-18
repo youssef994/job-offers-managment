@@ -1,0 +1,45 @@
+<app-dashboard></app-dashboard>
+
+<div class="admin-container">
+  <div class="filter-section">
+    <label for="roleSelect">Select Role:</label>
+    <select id="roleSelect" [(ngModel)]="selectedRole" (change)="onRoleChange($event)">
+      <option value="ADMIN">ADMIN</option>
+      <option value="CANDIDATE">VISITEUR</option>
+      <option value="COMPANY">ADHERANT</option>
+      <!-- Add other roles as needed -->
+    </select>
+
+    <input class="search-bar" type="text" placeholder="Search by username or email..." (input)="onSearchChange($event.target.value)">
+  </div>
+
+  <h2>Users List</h2>
+  <table *ngIf="filteredUsers.length > 0" class="users-table">
+    <thead>
+    <tr>
+      <th>ID</th>
+      <th>Username</th>
+      <th>Email</th>
+      <th>Verification</th>
+      <th>Active Status</th>
+      <th>Role</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let user of filteredUsers | slice: (page-1) * pageSize : page * pageSize">
+      <td>{{ user.id }}</td>
+      <td>{{ user.username }}</td>
+      <td>{{ user.email }}</td>
+      <td>{{ user.isVerified }}</td>
+      <td>{{ user.isActive }}</td>
+      <td>{{ user.role }}</td>
+      <td>
+        <button class="delete-btn" (click)="deleteUser(user.id)">Delete</button>
+      </td>
+    </tr>
+    </tbody>
+  </table>
+  <p *ngIf="filteredUsers.length === 0" class="no-users-found">No users found for the selected role.</p>
+
+  <ngb-pagination class="pagination-section" [collectionSize]="filteredUsers.length" [(page)]="page" [pageSize]="pageSize"></ngb-pagination>
+</div>

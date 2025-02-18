@@ -1,0 +1,94 @@
+/* Gradient Header */
+.header.bg-gradient-danger {
+  background: linear-gradient(87deg, #f5365c 0, #f56036 100%) !important;
+  color: white;
+}
+
+/* Navbar style (assuming app-navbar has some default styles) */
+app-navbar {
+  padding: 1rem;
+  font-size: 1.5rem;
+}
+
+/* Grid layout */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+/* Card styles */
+.card {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+/* Flex utilities */
+.flex {
+  display: flex;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+/* Text Colors */
+.text-black-500 {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.text-gray-500 {
+  color: #adb5bd;
+}
+
+.text-blue-500 {
+  color: #007BFF;
+}
+
+.text-red-500 {
+  color: #FF0000;
+}
+
+/* Buttons */
+.p-button-text {
+  background: none;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.p-button-text:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+/* Dialog */
+.p-dialog {
+  border-radius: 10px;
+}
+
+.field {
+  margin-bottom: 1rem;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.ng-dirty.ng-invalid {
+  color: red;
+  font-size: 0.8rem;
+  margin-top: 0.25rem;
+}

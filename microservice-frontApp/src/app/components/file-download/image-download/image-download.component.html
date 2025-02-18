@@ -1,0 +1,10 @@
+
+<div>
+  <div *ngIf="imageSrc">
+    <img [src]="imageSrc" alt="Downloaded Image" style="max-height: 100px;" />
+  </div>
+  <div *ngIf="!imageSrc" class="placeholder">
+    <img src="placeholder-image.jpg" alt="Placeholder Image" />
+  </div>
+</div>
+

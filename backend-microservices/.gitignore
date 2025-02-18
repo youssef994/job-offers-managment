@@ -1,0 +1,5 @@
+# Project exclude paths
+/availability-service/target/
+/booking-service/target/
+/paiement/target/
+/room-service/target/

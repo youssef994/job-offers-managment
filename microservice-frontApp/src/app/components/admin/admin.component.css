@@ -1,0 +1,99 @@
+/* Container adjustments */
+.admin-container {
+  padding: 40px;
+  max-width: 1100px;
+  margin: auto;
+  background-color: #fff;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  border-radius: 8px;
+}
+
+/* Filter section: Spacing and alignment */
+.filter-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+/* Role dropdown style */
+#roleSelect {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #d1d1d1;
+  font-size: 14px;
+  background-color: #f9f9f9;
+  transition: background-color 0.3s;
+}
+
+#roleSelect:hover {
+  background-color: #f1f1f1;
+}
+
+/* Search bar enhancements */
+.search-bar {
+  padding: 10px 15px;
+  border-radius: 5px;
+  border: 1px solid #d1d1d1;
+  font-size: 14px;
+  width: 250px;
+  transition: all 0.3s;
+  outline: none;
+}
+
+.search-bar:focus {
+  border-color: #007BFF;
+  box-shadow: 0 0 5px rgba(0,123,255,0.5);
+}
+
+/* Table adjustments for better visuals */
+.users-table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.users-table th, .users-table td {
+  padding: 12px 15px;
+  border-bottom: 1px solid #e0e0e0;
+  transition: background-color 0.3s;
+}
+
+.users-table th {
+  background-color: #f7f7f7;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.users-table tbody tr:hover {
+  background-color: #f9f9f9;
+}
+
+/* No users found message */
+.no-users-found {
+  text-align: center;
+  color: #D32F2F;
+  margin-top: 25px;
+  font-weight: 600;
+}
+.delete-btn {
+  padding: 6px 12px;
+  background-color: #D32F2F;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.delete-btn:hover {
+  background-color: #C12727;
+}
+
+/* Centering the pagination and giving it some top margin */
+.pagination-section {
+  display: flex;
+  justify-content: center;
+  margin-top: 35px;
+}

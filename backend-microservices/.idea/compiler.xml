@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="candidat-service" />
+        <module name="discoveryserver" />
+        <module name="configserver" />
+        <module name="company-service" />
+        <module name="apigateway" />
+        <module name="application-service" />
+        <module name="paiment-service" />
+        <module name="availability-service" />
+        <module name="exchange-service" />
+        <module name="event-service" />
+        <module name="article-service" />
+        <module name="booking-service" />
+        <module name="room-service" />
+        <module name="identity-service" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="apigateway" target="11" />
+      <module name="application-service" target="11" />
+      <module name="article-service" target="11" />
+      <module name="availability-service" target="19" />
+      <module name="booking-service" target="11" />
+      <module name="candidat-service" target="11" />
+      <module name="company-service" target="11" />
+      <module name="configserver" target="11" />
+      <module name="discoveryserver" target="11" />
+      <module name="event-service" target="11" />
+      <module name="exchange-service" target="11" />
+      <module name="identity-service" target="11" />
+      <module name="microservices" target="1.8" />
+      <module name="paiment-service" target="19" />
+      <module name="room-service" target="19" />
+      <module name="userservice" target="11" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="apigateway" options="-parameters" />
+      <module name="application-service" options="-parameters" />
+      <module name="article-service" options="-parameters" />
+      <module name="availability-service" options="-parameters" />
+      <module name="booking-service" options="-parameters" />
+      <module name="candidat-service" options="-parameters" />
+      <module name="company-service" options="-parameters" />
+      <module name="configserver" options="-parameters" />
+      <module name="discoveryserver" options="-parameters" />
+      <module name="event-service" options="-parameters" />
+      <module name="exchange-service" options="-parameters" />
+      <module name="identity-service" options="-parameters" />
+      <module name="paiment-service" options="-parameters" />
+      <module name="room-service" options="-parameters" />
+      <module name="userservice" options="-parameters" />
+    </option>
+  </component>
+</project>

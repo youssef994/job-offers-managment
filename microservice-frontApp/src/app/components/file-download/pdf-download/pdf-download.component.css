@@ -1,0 +1,11 @@
+.placeholder {
+  text-align: center;
+  background-color: #ccc; /* Background color for the placeholder */
+  padding: 20px;
+}
+
+.placeholder img {
+  max-width: 100%;
+  height: auto;
+  max-height: 200px;
+}

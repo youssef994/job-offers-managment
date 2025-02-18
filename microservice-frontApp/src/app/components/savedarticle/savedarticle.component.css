@@ -1,0 +1,122 @@
+/* General Styling */
+
+.header {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.container-fluid {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.flex {
+  display: flex;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+/* Nav Bar Styling (assuming it's in the header) */
+
+.app-navbar {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 10px 0;
+}
+
+/* Grid Styling */
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 20px;
+}
+
+.card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Article Card Styling */
+
+.md\:col-4 {
+  grid-column: span 4;
+}
+
+.mt-2 {
+  margin-top: 16px;
+}
+
+.ml-2, .ml-3 {
+  margin-left: 16px;
+}
+
+.mr-1 {
+  margin-right: 8px;
+}
+
+.mb-1 {
+  margin-bottom: 8px;
+}
+
+.px-2 {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.pl-1, .pr-1 {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.text-black-500 {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.text-gray-500 {
+  color: #7d7d7d;
+}
+
+.text-blue-500 {
+  color: #3498db;
+}
+
+.text-red-500 {
+  color: #e74c3c;
+}
+
+.font-bold {
+  font-weight: bold;
+}
+
+.shadow-4 {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.border-bottom-1 {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.surface-border {
+  color: #dcdcdc;
+}
+
+.border-circle {
+  border-radius: 50%;
+}
+
+.bg-blue-100 {
+  background-color: #e6f7ff;
+}

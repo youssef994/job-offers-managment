@@ -1,0 +1,15 @@
+
+T
+java:S1854'">Remove this useless assignment to local variable "createdJob".(Þ’”»
+V
+java:S4684&"@Replace this persistent entity with a simple POJO or DTO object.(·Ÿ–ë
+E
+java:S1481'"/Remove this unused "createdJob" local variable.(Þ’”»
+[
+java:S4684,"@Replace this persistent entity with a simple POJO or DTO object.(Á¹—×üÿÿÿÿ
+q
+java:S3923/"[Remove this conditional structure or edit its code blocks so that they're not all the same.(˜Ø¨É
+[
+java:S4684A"@Replace this persistent entity with a simple POJO or DTO object.(‹ä‹»ûÿÿÿÿ
+c
+java:S1128"MRemove this unused import 'com.slim.company.repository.JobDetailsRepository'.(’™“£

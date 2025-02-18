@@ -1,0 +1,71 @@
+<div class="sidebar">
+  <app-sidebar></app-sidebar>
+</div>
+<div class="main-content">
+  <app-dashboard></app-dashboard>
+</div>
+<div class="sidebar-container">
+<div *ngIf="candidate" class="candidate-profile">
+  <h1 class="profile-title">My Profile</h1>
+  <div class="profile-image">
+    <app-image-download></app-image-download>
+  </div>
+  <div class="basic-info">
+    <h2 class="section-title">Basic Information</h2>
+    <p class="info-item"><strong>First Name:</strong> {{ candidate.firstName }}</p>
+    <p class="info-item"><strong>Last Name:</strong> {{ candidate.lastName }}</p>
+    <p class="info-item"><strong>Email:</strong> {{ candidate.email }}</p>
+    <p class="info-item"><strong>Address:</strong> {{ candidate.address }}</p>
+    <p class="info-item"><strong>Phone Number:</strong> {{ candidate.phoneNumber }}</p>
+    <p class="info-item"><strong>Birth Date:</strong> {{ candidate.birthDate | date }}</p>
+  </div>
+
+  <div class="skills-languages">
+    <h2 class="section-title">Skills</h2>
+    <ul class="info-list">
+      <li *ngFor="let skill of candidate.skills | keyvalue" class="info-item">
+        <strong>{{ skill.key }}:</strong> {{ skill.value }}
+      </li>
+    </ul>
+
+    <h2 class="section-title">Languages</h2>
+    <ul class="info-list">
+      <li *ngFor="let language of candidate.languageLevel | keyvalue" class="info-item">
+        <strong>{{ language.key }}:</strong> {{ language.value }}
+      </li>
+    </ul>
+  </div>
+
+  <h2 class="section-title">Experiences</h2>
+  <ul class="timeline experience-timeline">
+    <li *ngFor="let experience of candidate.experiences" class="timeline-item experience-item">
+      <div class="timeline-marker">
+        <div class="marker"></div>
+        <div class="line"></div>
+      </div>
+      <div class="timeline-content experience-content">
+        <p class="experience-detail"><strong>Company Name:</strong> {{ experience.companyName }}</p>
+        <p class="experience-detail"><strong>Poste:</strong> {{ experience.poste }}</p>
+        <p class="experience-detail"><strong>Position:</strong> {{ experience.position }}</p>
+        <p class="experience-detail"><strong>Description:</strong> {{ experience.description }}</p>
+        <p class="experience-date">{{ experience.startDate | date }} - {{ experience.endDate | date }}</p>
+      </div>
+    </li>
+  </ul>
+
+  <h2 class="section-title">Education</h2>
+  <ul class="timeline education-timeline">
+    <li *ngFor="let education of candidate.educationHistory" class="timeline-item education-item">
+      <div class="timeline-marker">
+        <div class="marker"></div>
+        <div class="line"></div>
+      </div>
+      <div class="timeline-content education-content">
+        <p class="education-detail"><strong>School:</strong> {{ education.school }}</p>
+        <p class="education-detail"><strong>Degree:</strong> {{ education.degree }}</p>
+        <p class="education-date">{{ education.startDate | date }} - {{ education.endDate | date }}</p>
+      </div>
+    </li>
+  </ul>
+</div>
+</div>

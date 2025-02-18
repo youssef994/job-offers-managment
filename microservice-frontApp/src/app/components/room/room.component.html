@@ -1,0 +1,52 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
+<div fxLayout="row" fxLayoutWrap="wrap">
+  <!-- Panel/Card column -->
+  <div fxFlex.gt-sm="100%" fxFlex="100">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title">Room Management</h3>
+      </div>
+      <div class="panel-body">
+        <!-- Tabs -->
+        <ul class="nav nav-tabs" role="tablist">
+          <li role="presentation" class="active"><a href="#create-room" aria-controls="create-room" role="tab" data-toggle="tab">Create Room</a></li>
+          <li role="presentation"><a href="#room-list" aria-controls="room-list" role="tab" data-toggle="tab">Room List</a></li>
+          <li role="presentation"><a href="#personal-data" aria-controls="personal-data" role="tab" data-toggle="tab">Personal Data</a></li>
+        </ul>
+
+        <!-- Tab panes -->
+        <div class="tab-content">
+          <div role="tabpanel" class="tab-pane active" id="create-room">
+            <!-- Content of Create Room Tab -->
+            <app-create-room></app-create-room>
+          </div>
+          <div role="tabpanel" class="tab-pane" id="room-list">
+            <!-- Content of Room List Tab -->
+            <app-get-all-rooms></app-get-all-rooms>
+          </div>
+          <div role="tabpanel" class="tab-pane" id="personal-data">
+            <!-- Personal Data Expansion Panel -->
+            <div class="panel panel-default">
+              <div class="panel-heading" role="button" data-toggle="collapse" href="#collapsePersonalData" aria-expanded="false" aria-controls="collapsePersonalData">
+                Personal data - Type your name and age
+              </div>
+              <div class="collapse" id="collapsePersonalData">
+                <div class="panel-body">
+                  <div class="form-group">
+                    <input type="text" class="form-control" placeholder="First name">
+                  </div>
+                  <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Age">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

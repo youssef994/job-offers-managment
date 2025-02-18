@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="candidate-update.component.css">
+  <title>Update Your Profile</title>
+</head>
+<body>
+<div class="sidebar">
+  <app-sidebar></app-sidebar>
+</div>
+<div class="main-content">
+  <app-dashboard></app-dashboard>
+</div>
+<div class="container">
+  <form (ngSubmit)="onSubmit()" class="update-form">
+    <h1>Update Your Profile</h1>
+
+    <!-- Basic Information -->
+    <fieldset>
+      <legend>Basic Information</legend>
+      <div class="input-group">
+        <label for="firstName">First Name:</label>
+        <input [(ngModel)]="candidate.firstName" name="firstName" id="firstName" required>
+      </div>
+
+      <div class="input-group">
+        <label for="lastName">Last Name:</label>
+        <input [(ngModel)]="candidate.lastName" name="lastName" id="lastName" required>
+      </div>
+
+      <div class="input-group">
+        <label for="address">Address:</label>
+        <input [(ngModel)]="candidate.address" name="address" id="address">
+      </div>
+
+      <div class="input-group">
+        <label for="email">Email:</label>
+        <input [(ngModel)]="candidate.email" name="email" id="email" type="email" required>
+      </div>
+
+      <div class="input-group">
+        <label for="phoneNumber">Phone Number:</label>
+        <input [(ngModel)]="candidate.phoneNumber" name="phoneNumber" id="phoneNumber" required>
+      </div>
+
+      <div class="input-group">
+        <label for="birthDate">Birth Date:</label>
+        <input [(ngModel)]="candidate.birthDate" name="birthDate" id="birthDate" type="date">
+      </div>
+    </fieldset>
+
+
+
+    <!-- Education -->
+    <fieldset>
+      <legend>Education</legend>
+      <div class="input-group education" *ngFor="let edu of candidate.educationHistory; let i = index">
+        <input [(ngModel)]="edu.school" name="school{{i}}" id="school{{i}}" placeholder="School">
+        <input [(ngModel)]="edu.startDate" name="startDate{{i}}" id="startDate{{i}}" type="date" placeholder="Start Date">
+        <input [(ngModel)]="edu.endDate" name="endDate{{i}}" id="endDate{{i}}" type="date" placeholder="End Date">
+        <input [(ngModel)]="edu.degree" name="degree{{i}}" id="degree{{i}}" placeholder="Degree">
+        <button type="button" class="remove-btn" (click)="removeEducation(i)">Remove</button>
+      </div>
+
+      <button type="button" class="add-button" (click)="addEducation()">Add Education</button>
+    </fieldset>
+
+    <!-- Experience -->
+    <fieldset>
+      <legend>Experience</legend>
+      <div class="input-group experience" *ngFor="let exp of candidate.experiences; let i = index">
+        <input [(ngModel)]="exp.companyName" name="companyName{{i}}" id="companyName{{i}}" placeholder="Company Name">
+        <input [(ngModel)]="exp.poste" name="poste{{i}}" id="poste{{i}}" placeholder="Poste">
+        <input [(ngModel)]="exp.position" name="position{{i}}" id="position{{i}}" placeholder="Position">
+        <input [(ngModel)]="exp.startDate" name="startDateExp{{i}}" id="startDateExp{{i}}" type="date" placeholder="Start Date">
+        <input [(ngModel)]="exp.endDate" name="endDateExp{{i}}" id="endDateExp{{i}}" type="date" placeholder="End Date">
+        <textarea [(ngModel)]="exp.description" name="description{{i}}" id="description{{i}}" placeholder="Description"></textarea>
+        <button type="button" class="remove-btn" (click)="removeExperience(i)">Remove</button>
+      </div>
+
+      <button type="button" class="add-button" (click)="addExperience()">Add Experience</button>
+    </fieldset>
+
+    <div class="submit-btn">
+      <button type="submit">Update</button>
+    </div>
+  </form>
+</div>
+</body>
+</html>

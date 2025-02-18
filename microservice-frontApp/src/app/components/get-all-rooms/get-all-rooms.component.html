@@ -1,0 +1,37 @@
+<div fxLayout="row" fxLayoutWrap="wrap">
+  <!-- Card column -->
+  <div fxFlex.gt-sm="100%" fxFlex="100">
+    <div class="panel panel-default">
+      <div class="panel-heading">Room Management</div>
+      <div class="panel-body">
+        <!-- Tabs -->
+        <ul class="nav nav-tabs">
+          <li class="active"><a data-toggle="tab" href="#create-room">Create room</a></li>
+          <li><a data-toggle="tab" href="#room-list">Room List</a></li>
+          <li><a data-toggle="tab" href="#personal-data">Personal data</a></li>
+        </ul>
+
+        <div class="tab-content">
+          <div id="create-room" class="tab-pane fade in active">
+            <app-create-room></app-create-room>
+          </div>
+          <div id="room-list" class="tab-pane fade">
+            <app-get-all-rooms></app-get-all-rooms>
+          </div>
+          <div id="personal-data" class="tab-pane fade">
+            <!-- Collapse component for expansion effect -->
+            <a data-toggle="collapse" href="#collapseData">Type your name and age</a>
+            <div id="collapseData" class="collapse">
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="First name">
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Age">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

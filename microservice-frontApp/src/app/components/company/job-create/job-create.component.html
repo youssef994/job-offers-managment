@@ -1,0 +1,49 @@
+<div class="wrapper">
+  <app-dashboard class="reduced-dashboard"></app-dashboard>
+  <app-sidebar class="sidebar"></app-sidebar>
+</div>
+<div class="create-job-container">
+  <h2>New Post</h2>
+  <form (ngSubmit)="createJob()">
+    <div class="form-group">
+      <label for="jobTitle">Title</label>
+      <input type="text" id="jobTitle" [(ngModel)]="jobDetails.jobTitle" name="jobTitle" required>
+    </div>
+    <div class="form-group">
+      <label for="peopleNumber">Number of places</label>
+      <input type="number" id="peopleNumber" [(ngModel)]="jobDetails.peopleNumber" name="peopleNumber" required>
+    </div>
+    <div class="form-group">
+      <label for="location">Location</label>
+      <input type="text" id="location" [(ngModel)]="jobDetails.location" name="location" required>
+    </div>
+    <div class="form-group">
+      <label for="jobType">Type</label>
+      <select id="jobType" [(ngModel)]="jobDetails.jobType" name="jobType">
+        <option value="FULL_TIME">FULL_TIME</option>
+        <option value="PART_TIME">PART_TIME</option>
+        <option value="TEMPORARY">TEMPORARY</option>
+        <option value="INTERNSHIP">INTERNSHIP</option>
+        <option value="PERMANENT">PERMANENT</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="nbrHours">Duration</label>
+      <input type="number" id="nbrHours" [(ngModel)]="jobDetails.nbrHours" name="nbrHours" required>
+    </div>
+    <div class="form-group">
+      <label for="startDate">Date</label>
+      <input type="date" id="startDate" [(ngModel)]="jobDetails.startDate" name="startDate" required>
+    </div>
+    <div class="form-group">
+      <label for="salary">salary</label>
+      <input type="number" id="salary" [(ngModel)]="jobDetails.salary" name="salary" required>
+    </div>
+    <div class="form-group">
+      <label for="description">Description</label>
+      <textarea id="description" [(ngModel)]="jobDetails.description" name="description" required></textarea>
+    </div>
+    <button type="button" (click)="onButtonClicked()">Submit Post</button>
+
+  </form>
+</div>

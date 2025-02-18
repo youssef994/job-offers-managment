@@ -1,0 +1,13 @@
+
+b	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(ñÆÁÅ
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(˜ëçËşÿÿÿÿ
+[
+java:S4684"@Replace this persistent entity with a simple POJO or DTO object.(¿Äºùÿÿÿÿ
+[
+java:S4684>"@Replace this persistent entity with a simple POJO or DTO object.(Ş³Ô³øÿÿÿÿ
+V
+java:S4684M"@Replace this persistent entity with a simple POJO or DTO object.(®çò¿
+V
+java:S4684R"@Replace this persistent entity with a simple POJO or DTO object.(“‰Ó»
+c
+java:S1128"HRemove this unused import 'com.example.articleservice.Repo.ArticleRepo'.(šŠâşÿÿÿÿ

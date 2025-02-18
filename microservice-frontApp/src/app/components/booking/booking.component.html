@@ -1,0 +1,30 @@
+<div fxLayout="row" fxLayoutWrap="wrap">
+  <!-- Card column -->
+  <div fxFlex.gt-sm="100%" fxFlex="100">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Booking Management</h5>
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active" id="history-tab" data-toggle="tab" href="#history" role="tab" aria-controls="history" aria-selected="true">Booking History</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="new-booking-tab" data-toggle="tab" href="#new-booking" role="tab" aria-controls="new-booking" aria-selected="false">New Booking</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="extend-booking-tab" data-toggle="tab" href="#extend-booking" role="tab" aria-controls="extend-booking" aria-selected="false">Extend Booking</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="statistics-tab" data-toggle="tab" href="#statistics" role="tab" aria-controls="statistics" aria-selected="false">Statistics</a>
+          </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+          <div class="tab-pane fade show active" id="history" role="tabpanel" aria-labelledby="history-tab"><app-get-all-booking></app-get-all-booking></div>
+          <div class="tab-pane fade" id="new-booking" role="tabpanel" aria-labelledby="new-booking-tab"><app-create-booking></app-create-booking></div>
+          <div class="tab-pane fade" id="extend-booking" role="tabpanel" aria-labelledby="extend-booking-tab"><app-extend-booking></app-extend-booking></div>
+          <div class="tab-pane fade" id="statistics" role="tabpanel" aria-labelledby="statistics-tab"><app-statistics></app-statistics></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,26 @@
+<div class="sidebar">
+  <app-sidebar></app-sidebar>
+</div>
+<div class="main-content">
+  <app-dashboard></app-dashboard>
+</div>
+<div *ngIf="applications.length" class="application-list">
+  <h2>Applications for Post id: {{jobId}}</h2>
+
+  <div *ngFor="let app of applications" class="application-card">
+    <div class="candidate-info">
+      <strong>Application:</strong> {{app.userId}}
+    </div>
+    <div class="resume-link">
+      <a [href]="getResumeLink(app.resumePath)" target="_blank">Download Files</a>
+    </div>
+    <div class="status-update">
+      <label for="status-{{app.applicationId}}">Status:</label>
+      <select id="status-{{app.applicationId}}" [(ngModel)]="app.status">
+        <option *ngFor="let status of ApplicationStatus | keyvalue" [value]="status.key">{{status.value}}</option>
+      </select>
+      <button *ngIf="app.applicationId" (click)="updateApplicationStatus(app.applicationId, app.status)">Update</button>
+    </div>
+    <button (click)="viewCandidateProfile(app.candidateId)">View Profile</button>
+  </div>
+</div>

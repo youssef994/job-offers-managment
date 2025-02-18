@@ -1,0 +1,20 @@
+
+n
+java:S1128"XRemove this unused import 'org.springframework.boot.web.servlet.FilterRegistrationBean'.(×±Ñ¡
+^
+java:S1128"HRemove this unused import 'org.springframework.context.annotation.Bean'.(‚î‰Þ
+[
+java:S1128"@Remove this unused import 'org.springframework.http.HttpMethod'.(Ê¨Ä¡øÿÿÿÿ
+u
+java:S1128"_Remove this unused import 'org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean'.(£õÕ–
+`
+java:S1128	"KRemove this unused import 'org.springframework.web.cors.CorsConfiguration'.(î¤·`
+t
+java:S1128
+"YRemove this unused import 'org.springframework.web.cors.UrlBasedCorsConfigurationSource'.(µ²Ýûùÿÿÿÿ
+a
+java:S1128"FRemove this unused import 'org.springframework.web.filter.CorsFilter'.(¨­ŸØøÿÿÿÿ
+v
+java:S1128"[Remove this unused import 'org.springframework.web.servlet.config.annotation.EnableWebMvc'.(Â°Ä¡úÿÿÿÿ
+H
+java:S1128"-Remove this unused import 'java.util.Arrays'.(î–˜Éüÿÿÿÿ

@@ -1,0 +1,123 @@
+/* Global Styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+  background: #f2f3f5;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Sidebar Styling */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 240px;
+  background: #2f3a4b;
+  overflow-y: auto;
+  box-shadow: 2px 0px 10px rgba(0,0,0,0.05);
+  transition: all 0.3s ease-in-out;
+}
+
+.sidebar a {
+  color: #bdc3c7;
+  padding: 15px;
+  text-decoration: none;
+  display: block;
+  border-bottom: 1px solid #404b58;
+}
+
+.sidebar a:hover {
+  background: #404b58;
+  color: #fff;
+}
+
+/* Main Content Styling */
+.main-content {
+  margin-left: 250px;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.05);
+  border-radius: 8px;
+}
+
+.candidate-profile {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+.profile-title {
+  font-size: 1.8em;
+  font-weight: 500;
+  border-bottom: 2px solid #2f3a4b;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+}
+
+.section-title {
+  font-size: 1.4em;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  border-bottom: 1px dashed #e0e0e0;
+  padding-bottom: 10px;
+}
+
+.info-item {
+  margin: 10px 0;
+  padding: 5px 0;
+  border-bottom: 1px dashed #e0e0e0;
+}
+
+.timeline {
+  position: relative;
+  margin-top: 20px;
+}
+
+.timeline-item {
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 20px;
+}
+
+.timeline-item:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 10px;
+  height: 10px;
+  background: #2f3a4b;
+  border-radius: 50%;
+}
+
+.timeline-content {
+  padding-left: 20px;
+}
+
+/* Button Styles */
+button {
+  background-color: #2f3a4b;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: #404b58;
+}
+.profile-image img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  object-fit: cover;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}

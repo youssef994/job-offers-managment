@@ -1,0 +1,31 @@
+<link rel="stylesheet" type="text/css" href="company-create.component.css">
+<app-dashboard class="reduced-dashboard"></app-dashboard>
+<app-sidebar class="sidebar"></app-sidebar>
+<div class="form-container">
+  <h2>Event Organiser Details</h2>
+  <form (ngSubmit)="saveCompany()" class="form">
+    <div class="form-group">
+      <label for="companyName">Organization Name</label>
+      <input type="text" id="companyName" [(ngModel)]="companyDetails.companyName" name="companyName" required>
+    </div>
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input type="text" id="email" [(ngModel)]="companyDetails.email" name="email" required>
+    </div>
+    <div class="form-group">
+      <label for="employeeNumber">Total Places</label>
+      <input type="number" id="employeeNumber" [(ngModel)]="companyDetails.employeeNumber" name="employeeNumber" required>
+    </div>
+    <div class="form-group">
+      <label for="fullName">Description</label>
+      <input type="text" id="fullName" [(ngModel)]="companyDetails.fullName" name="fullName" required>
+    </div>
+    <div class="form-group">
+      <label for="phone">Phone</label>
+      <input type="number" id="phone" [(ngModel)]="companyDetails.phone" name="phone" required>
+    </div>
+
+    <app-file-upload></app-file-upload>
+    <button type="submit">Save</button>
+  </form>
+</div>

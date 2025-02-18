@@ -1,0 +1,32 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<!--<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>--><div class="container">
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <h2 class="mb-3">Extend Booking</h2>
+      <form (ngSubmit)="onSubmit()">
+        <div class="mb-3">
+          <label for="bookingId" class="form-label">Booking ID</label>
+          <input type="number" class="form-control" id="bookingId" [(ngModel)]="bookingId" name="bookingId" required>
+        </div>
+        <div class="mb-3">
+          <label for="newEndDate" class="form-label">New End Date</label>
+          <input type="date" class="form-control" id="newEndDate" [(ngModel)]="newEndDate" name="newEndDate" required>
+        </div>
+        <div class="mb-3">
+          <label for="token" class="form-label">Payment Token (credit card)</label>
+          <input type="text" class="form-control" id="token" [(ngModel)]="token" name="token" required>
+        </div>
+        <div class="mb-3">
+          <label for="amount" class="form-label">number</label>
+          <input type="number" class="form-control" id="amount" [(ngModel)]="amount" name="amount" required>
+        </div>
+        <div class="mb-3">
+          <label for="currency" class="form-label">Payment Currency</label>
+          <input type="text" class="form-control" id="currency" [(ngModel)]="currency" name="currency" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Extend Booking</button>
+      </form>
+    </div>
+  </div>
+</div>

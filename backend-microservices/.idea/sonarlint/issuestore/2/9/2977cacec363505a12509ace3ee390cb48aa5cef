@@ -1,0 +1,14 @@
+
+J
+java:S3740"/Provide the parametrized type for this generic.(õé„ïøÿÿÿÿ
+E
+java:S3740#"/Provide the parametrized type for this generic.(ûž¨ù
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ôÜð„
+V	java:S125"<This block of commented-out lines of code should be removed.(ïêßÊýÿÿÿÿ
+[
+java:S4684+"@Replace this persistent entity with a simple POJO or DTO object.(á¶·¯þÿÿÿÿ
+E	java:S106,"+Replace this use of System.out by a logger.(¨¶ÑÍþÿÿÿÿ
+@	java:S1065"+Replace this use of System.out by a logger.(ðÒ¿®
+@	java:S106;"+Replace this use of System.out by a logger.(ðÒ¿®
+V	java:S125A"<This block of commented-out lines of code should be removed.(¦ŒÙûÿÿÿÿ
+Q	java:S125H"<This block of commented-out lines of code should be removed.(‹ëä·
