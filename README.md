@@ -131,25 +131,7 @@ The project is organized into two main directories:
 - `backend-microservices/`: Contains all the Java Spring Boot microservices
 - `microservice-frontApp/`: Contains the Angular frontend application
 
-## Browser Support
 
-The application supports the latest two versions of the following browsers:
-- Chrome
-- Firefox
-- Edge
-- Safari
-- Opera [3](#0-2) 
 
-## License
 
-This project is licensed under the MIT License.
 
-## Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-Notes:
-This README was created based on the Overview wiki page from the job-offers-managment repository. The content has been formatted for GitHub with appropriate sections and diagrams. The installation instructions were added as a standard section for a README file, though specific details may need to be adjusted based on the actual setup requirements.
-
-Wiki pages you might want to explore:
-- [Overview (youssef994/job-offers-managment)](/wiki/youssef994/job-offers-managment#1)
