@@ -1,4 +1,3 @@
-I'll create a README.md file based on the Overview wiki page content for the job-offers-management GitHub project.
 
 # Job Offers Management System
 
@@ -15,66 +14,7 @@ This system serves as a complete job marketplace with extended capabilities incl
 - Exchange programs management
 - Payment processing capabilities
 
-## Core Architecture
 
-The system is built on a microservices architecture with the following components:
-
-```mermaid
-flowchart TB
-    Client["Client Browser"] --> FrontendApp["Angular Frontend Application<br>(microservice-frontApp)"]
-    FrontendApp --> ApiGateway["API Gateway<br>(ApigatewayApplication)"]
-    
-    subgraph "Backend Microservices"
-        ApiGateway --> IdentityService["Identity Service<br>(IdentityServiceApplication)"]
-        ApiGateway --> CompanyService["Company Service<br>(CompanyServiceApplication)"]
-        ApiGateway --> CandidatService["Candidat Service<br>(CandidatServiceApplication)"]
-        ApiGateway --> ApplicationService["Application Service<br>(ApplicationServiceApplication)"]
-        ApiGateway --> ArticleService["Article Service<br>(ArticleServiceApplication)"]
-        ApiGateway --> ExchangeService["Exchange Service<br>(ExchangeServiceApplication)"]
-        ApiGateway --> BookingService["Booking Service<br>(BookingServiceApplication)"]
-        ApiGateway --> AvailabilityService["Availability Service<br>(AvailabilityServiceApplication)"]
-        ApiGateway --> PaymentService["Payment Service<br>(PaiementApplication)"]
-    end
-    
-    subgraph "Infrastructure Services"
-        DiscoveryServer["Discovery Server<br>(DiscoveryserverApplication)"]
-        DiscoveryServer -.-> ApiGateway
-        DiscoveryServer -.-> IdentityService
-        DiscoveryServer -.-> CompanyService
-        DiscoveryServer -.-> CandidatService
-        DiscoveryServer -.-> ApplicationService
-        DiscoveryServer -.-> ArticleService
-        DiscoveryServer -.-> ExchangeService
-        DiscoveryServer -.-> BookingService
-        DiscoveryServer -.-> AvailabilityService
-        DiscoveryServer -.-> PaymentService
-    end
-```
-
-## Frontend Application Structure
-
-The frontend application is built with Angular and follows a component-based architecture. It's organized around two main layouts:
-
-```mermaid
-flowchart TD
-    AppComponent["App Component<br>(app.component.ts)"] --> AdminLayoutComponent["Admin Layout Component<br>(admin-layout.component.ts)"]
-    AppComponent --> AuthLayoutComponent["Auth Layout Component<br>(auth-layout.component.ts)"]
-    
-    AuthLayoutComponent --> LoginComponent["Login Component"]
-    AuthLayoutComponent --> RegisterComponent["Register Component"]
-    
-    AdminLayoutComponent --> SidebarComponent["Sidebar Component<br>(sidebar.component.ts)"]
-    AdminLayoutComponent --> NavbarComponent["Navbar Component"]
-    AdminLayoutComponent --> FooterComponent["Footer Component"]
-    AdminLayoutComponent --> RouterOutlet["Router Outlet<br>(Dynamic Content)"]
-    
-    RouterOutlet --> JobManagement["Job Management Components"]
-    RouterOutlet --> CompanyManagement["Company Management Components"]
-    RouterOutlet --> CandidateManagement["Candidate Management Components"]
-    RouterOutlet --> BookingManagement["Booking Management Components"]
-    RouterOutlet --> ArticleManagement["Article Management Components"]
-    RouterOutlet --> ExchangeManagement["Exchange Program Management"]
-```
 
 ## User Roles and Navigation
 
